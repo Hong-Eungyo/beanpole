@@ -1,0 +1,73 @@
+.header-wrap {
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: transparent;
+    z-index: 999;
+    font-family: 'Red Hat Display', sans-serif;
+} 
+
+.header-row-01 {
+    width: 100%;
+    min-width: 1200px;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+    #index-logo {
+        width: 177px;
+        height: 80px;
+        position: relative;
+        background: url(../img/logo_black.svg) no-repeat center;
+        background-size: contain;
+    }
+    #index-logo > a {
+        display: block;
+        width: 177px;
+        height: 80px;
+    }
+    #index-logo  span {
+        display: block;
+        width: 177px;
+        height: 80px;
+        position: absolute;
+        left: 0;
+        background: url(../img/logo_white.svg) no-repeat center;
+        z-index: 2;
+    }
+    #index-logo  span.hide {
+        display: none;
+    }
+
+    .main-menu {
+        width: 800px;
+        height: 80px;
+        font-size: 14pt;
+    }
+    .main-menu > ul {
+        display: flex;
+        justify-content: space-evenly;
+        width: 800px;
+        height: 80px;
+    }
+
+    .main-menu > ul > li > a {
+        line-height: 80px;
+    }
+    
+    .sub-menu {
+        font-size: 12pt;
+    }
+
+    .sub-menu > li > a {
+        line-height: 40px;
+    }
+
+    .sub-menu-02 li > a {
+        line-height: 30px;
+    }
+

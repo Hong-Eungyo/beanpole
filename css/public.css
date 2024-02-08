@@ -1,0 +1,45 @@
+html {overflow: hidden;}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    color: #0d0d0d;
+    font-size: 10pt;
+    
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: #0d0d0d;
+}
+a:active, a:focus {
+    text-decoration: none;
+    color: #0d0d0d;
+}
+
+ul, li {
+    list-style: none;
+}
+
+.content-wrap {
+    width: 100%;
+    height: 100%;
+    background: wheat;
+    position: relative;
+    text-align: center;
+    line-height: 100vh;
+    font-size: 100pt;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+footer {
+    width: 100%;
+    height: 100px;
+    background: #ddd;
+}
