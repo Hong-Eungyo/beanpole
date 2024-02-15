@@ -7,8 +7,8 @@
 
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;600&family=Red+Hat+Display:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;600&family=Red+Hat+Display:wght@300;400;700&display=swap" rel="stylesheet">
 
     <!-- css -->
     <link rel="stylesheet" href="css/public.css">
@@ -24,12 +24,13 @@
 
     <!-- script -->
     <script src="js/index_scroll_event.js"></script>
+    <script src="js/index_header.js"></script>
 </head>
 <body>
     <header class="header-wrap">
         <div class="header-row-01">
             <h1 id="index-logo"><a href="index.html">
-                <span>
+                <span class="logohide" id="logo_black">
                     <!-- 투명도 따라 로고변경 -->
                 </span>
             </a></h1>
@@ -39,7 +40,7 @@
                         <ul class="sub-menu">
                             <li><a href="#">HISTORY</a></li>
                             <li><a href="#">PHILOSOPHY</a></li>
-                            <li>THE ESSENTIAL   
+                            <li><span>THE ESSENTIAL </span>  
                                 <ul class="sub-menu-02">
                                     <li><a href="#">Bicycle Story</a></li>
                                     <li><a href="#">Signature Check</a></li>
@@ -76,14 +77,18 @@
         </div>
     </header>
     <div class="content-container">
-        <div class="content-wrap">
-            <div class="content-wrap slide-banner">메인 슬라이드</div
-            ><div class="content-wrap heritage-content">01</div
-            ><div class="content-wrap brand-content">02</div
-            ><div class="content-wrap journal-content">03</div
-            ><div class="content-wrap activity-content">04</div>
+        <div class="content-wrap slide-banner">메인 슬라이드
+                <div class="slide-box">
+                    <div class="text-area"></div>
+                    <div class="arrow-area"></div>
+                </div>
+        </div
+        ><div class="content-wrap heritage-content">01</div
+        ><div class="content-wrap brand-content">02</div
+        ><div class="content-wrap journal-content">03</div
+        ><div class="content-wrap activity-content">04</div>
             
-        </div>
+
     </div>
     <footer>
         footer
