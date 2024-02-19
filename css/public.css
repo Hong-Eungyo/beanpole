@@ -1,11 +1,11 @@
-html {overflow: hidden;}
+/* html {overflow: hidden;} */
 
 html, body {
-    width: 100%;
+    width: 100%; 
     height: 100%;
     color: #0d0d0d;
     font-size: 10pt;
-    
+    position: relative;
 }
 
 * {
@@ -36,17 +36,10 @@ ul, li {
 .content-wrap {
     width: 100%;
     height: 100%;
-    background: wheat;
     position: relative;
+    clear: both;
     text-align: center;
-    line-height: 100vh;
-    font-size: 100pt;
     font-family: 'Noto Sans KR', sans-serif;
+    background: #f1f1f1
 }
 
-
-footer {
-    width: 100%;
-    height: 100px;
-    background: #ddd;
-}

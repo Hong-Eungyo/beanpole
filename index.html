@@ -8,11 +8,14 @@
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;600&family=Red+Hat+Display:wght@300;400;700&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;600&family=Red+Hat+Display:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    
     <!-- css -->
     <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/index_header.css">
     <link rel="stylesheet" href="css/index_main.css">
+    <link rel="stylesheet" href="css/footer.css">
 
     <!-- jquery -->
     <script src="js/jquery-3.7.1.js"></script>
@@ -23,8 +26,9 @@
     <script src="js/jquery-mousewheel-3.1.13/jquery.mousewheel.min.js"></script>
 
     <!-- script -->
-    <script src="js/index_scroll_event.js"></script>
+    <!-- <script src="js/index_scroll_event.js"></script> -->
     <script src="js/index_header.js"></script>
+    <!-- <script src="js/index_slide.js"></script> -->
 </head>
 <body>
     <header class="header-wrap">
@@ -36,40 +40,40 @@
             </a></h1>
             <nav class="main-menu">
                 <ul>
-                    <li><a href="#">HERITAGE</a>
+                    <li><a href="menu01_sub01.html">HERITAGE</a>
                         <ul class="sub-menu">
-                            <li><a href="#">HISTORY</a></li>
-                            <li><a href="#">PHILOSOPHY</a></li>
+                            <li><a href="menu01_sub01.html">HISTORY</a></li>
+                            <li><a href="menu01_sub02.html">PHILOSOPHY</a></li>
                             <li><span>THE ESSENTIAL </span>  
                                 <ul class="sub-menu-02">
-                                    <li><a href="#">Bicycle Story</a></li>
-                                    <li><a href="#">Signature Check</a></li>
-                                    <li><a href="#">Essential Items</a></li>
+                                    <li><a href="menu01_sub03_01.html">Bicycle Story</a></li>
+                                    <li><a href="menu01_sub03_02.html">Signature Check</a></li>
+                                    <li><a href="menu01_sub03_03.html">Essential Items</a></li>
                                 </ul>
                             </li>
                         </ul>
                     </li>
-                    <li><a href="#">BRANDS</a>
+                    <li><a href="menu02_sub01.html">BRANDS</a>
                         <ul class="sub-menu">
-                            <li><a href="#">MEN</a></li>
-                            <li><a href="#">LADIES</a></li>
-                            <li><a href="#">KIDS</a></li>
-                            <li><a href="#">ACCESSORY</a></li>
-                            <li><a href="#">GOLF</a></li>
+                            <li><a href="menu02_sub01.html">MEN</a></li>
+                            <li><a href="menu02_sub02.html">LADIES</a></li>
+                            <li><a href="menu02_sub03.html">KIDS</a></li>
+                            <li><a href="menu02_sub04.html">ACCESSORY</a></li>
+                            <li><a href="menu02_sub05.html">GOLF</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">JOURNAL</a>
+                    <li><a href="menu03_sub01.html">JOURNAL</a>
                         <ul class="sub-menu">
-                            <li><a href="#">BRAND CAMPAIGN</a></li>
-                            <li><a href="#">COLLABORATION</a></li>
-                            <li><a href="#">STYLE SNAPS</a></li>
-                            <li><a href="#">CLASSIC MASTERY</a></li>
+                            <li><a href="menu03_sub01.html">BRAND CAMPAIGN</a></li>
+                            <li><a href="menu03_sub02.html">COLLABORATION</a></li>
+                            <li><a href="menu03_sub03.html">STYLE SNAPS</a></li>
+                            <li><a href="menu03_sub04.html">CLASSIC MASTERY</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">GOOD ACTIVITY</a>
+                    <li><a href="menu04_sub01.html">GOOD ACTIVITY</a>
                         <ul class="sub-menu">
-                            <li><a href="#">GOOD CARE</a></li>
-                            <li><a href="#">GOOD CYCLE</a></li>
+                            <li><a href="menu04_sub01.html">GOOD CARE</a></li>
+                            <li><a href="menu04_sub01.html">GOOD CYCLE</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -77,21 +81,144 @@
         </div>
     </header>
     <div class="content-container">
-        <div class="content-wrap slide-banner">메인 슬라이드
-                <div class="slide-box">
-                    <div class="text-area"></div>
-                    <div class="arrow-area"></div>
+        <div class="content-wrap slide-banner">
+                <div class="slide_all_wrap">
+                    <div class="slide_box slide_01">
+                        <div class="text-area"></div>
+                    </div>
+                    <div class="slide_box slide_02"></div>
+                    <div class="slide_box slide_03"></div>
+                    <div class="slide_box slide_04"></div>
                 </div>
-        </div
-        ><div class="content-wrap heritage-content">01</div
-        ><div class="content-wrap brand-content">02</div
-        ><div class="content-wrap journal-content">03</div
-        ><div class="content-wrap activity-content">04</div>
+                <nav class="dot_all">
+                    <div class="dot open"> ● </div>
+                    <div class="dot"> ● </div>
+                    <div class="dot"> ● </div>
+                    <div class="dot"> ● </div>
+                </nav>
+                <div class="slide_btn">
+                    <aside class="prev">
+                        <span class="material-symbols-outlined">
+                            arrow_back
+                        </span>
+                    </aside>
+                    <aside class="next">
+                        <span class="material-symbols-outlined">
+                            arrow_forward
+                        </span>
+                    </aside>
+                </div>
+
+        </div>
+        <div class="content-wrap heritage-content">
+            <div class="content-box">
+                <h2 class="content_title">HERITAGE</h2>
+                <h3 class="content_sub_title">
+                    빈폴이 가진 오랜 역사, <br>
+                    그리고 변함없는 빈폴의 가치
+                </h3>
+                    <nav class="content_category">
+                        <ul>
+                            <li><a href="menu01_sub01.html">HISTORY</a></li>
+                            <li><a href="menu01_sub02.html">PHILOSOPHY</a></li>
+                            <li><a href="menu01_sub03_01.html">THE ESSENTIAL</a></li>
+                        </ul>
+                    </nav>
+                
+            </div>
+            
+        </div>
+        <div class="content-wrap brand-content">
+            <div class="content-box">
+                <h2 class="content_title">BRAND</h2>
+                <h3 class="content_sub_title">
+                    시대를 아우르는 클래식, <br>
+                    타임리스 캐주얼 웨어
+                </h3>
+                    <nav class="content_category">
+                        <ul>
+                            <li><a href="menu02_sub01.html">MEN</a></li>
+                            <li><a href="menu02_sub02.html">LADIES</a></li>
+                            <li><a href="menu02_sub03_01.html">KIDS</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="menu02_sub04.html">ACCESSORY</a></li>
+                            <li><a href="menu02_sub05.html">GOLF</a></li>
+                        </ul>
+                    </nav>
+                
+            </div>
+        </div>
+        <div class="content-wrap journal-content">
+            <div class="content-box">
+                <h2 class="content_title">JOURNAL</h2>
+                <h3 class="content_sub_title">
+                    우리가 빈폴을 입는 이유
+                </h3>
+                    <nav class="content_category">
+                        <ul>
+                            <li><a href="menu03_sub01.html">BRAND CAMPAIGN</a></li>
+                            <li><a href="menu03_sub02.html">COLLABORATION</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="menu03_sub03.html">STYLE SNAPS</a></li>
+                            <li><a href="menu03_sub04.html">CLASSIC MASTERY</a></li>
+                        </ul>
+                    </nav>
+                
+            </div>
+        </div>
+        <div class="content-wrap activity-content">
+            <div class="content-box">
+                <h2 class="content_title">GOOD ACTIVITY</h2>
+                <h3 class="content_sub_title">
+                    좋은 옷을 더 오래 입는 방법
+                </h3>
+                    <nav class="content_category">
+                        <ul>
+                            <li><a href="menu04_sub01.html">GOOD CARE</a></li>
+                            <li><a href="menu04_sub02.html">GOOD CYCLE</a></li>
+                        </ul>
+                    </nav>
+                
+            </div>
+        </div>
             
 
     </div>
     <footer>
-        footer
+        <div class="footer_top">
+            <h4 class="footer_quick_menu_title">STORE</h4>
+            <nav class="footer_quick_menu">
+                <ul>
+                    <li><a href="menu02_sub01.html">MEN</a></li>
+                    <li><a href="menu02_sub02.html">LADIES</a></li>
+                    <li><a href="menu02_sub03.html">KIDS</a></li>
+                    <li><a href="menu02_sub04.html">ACCESSORY</a></li>
+                    <li><a href="menu02_sub05.html">GOLF</a></li>
+                </ul>
+                <div class="sns_link">
+                    <img src="img/sns_icon.svg" alt="BEANPOLE INSTAR" width="30px">
+                </div>
+        </nav>
+        </div>
+        <hr>
+        <div class="footer_bottom">
+            <div class="footer_left_side">
+                <h4 class="footer_logo">
+                    <img src="img/logo_black.svg" alt="BEANPOLE" width="170px">
+                </h4>
+                <p>
+                    <span>삼성물산 (주) 패션부문</span>
+                    <span>서울특별시 강남구 남부순환로 2806(도곡동)</span>
+                    <span>대표 : 고정석 외 2명 | 사업자 등록번호: 101-85-43600</span>
+                </p>
+                <p>
+                    BEANPOLE CLONE CODING Portfolio Made By Jeon You Ra
+                </p>
+            </div>
+            <div class="footer_top_btn">TOP</div>
+        </div>
     </footer>
 </body>
 </html>
