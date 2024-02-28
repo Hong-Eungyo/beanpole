@@ -1,10 +1,10 @@
 footer {
     position: relative;
-    top: 400%;
     width: 100%;
+    min-width: 1760px;
     height: 340px;
     padding: 50px 100px;
-    background: #EBEBE6;
+    background: #EBEBE6; 
 }
 
 .footer_top {

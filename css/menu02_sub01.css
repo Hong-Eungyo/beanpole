@@ -1,0 +1,128 @@
+.main_content_container {
+  width: 100%;
+  height: auto;
+  position: relative;
+  left: 0;
+  top: 80px;
+  padding-bottom: 80px;
+}
+
+.site_root {
+  width: 1760px;
+  height: 120px;
+  line-height: 120px;
+  font-size: 1.3rem;
+  color: #666;
+  margin: 0 auto;
+}
+
+.site_root .root_home {
+  color: #666;
+  text-decoration: underline;
+}
+
+.site_root .root_self {
+  color: #5a5a5a;
+  font-weight: bold;
+}
+
+.main_content_all {
+  width: 1760px;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.main_content_top {
+  width: 100%;
+  height: auto;
+  position: relative;
+  clear: both;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding-bottom: 80px;
+}
+
+.main_content_title {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  font-size: 65px;
+  margin-bottom: 30px;
+}
+
+.quote_img {
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin-bottom: 20px;
+}
+
+.main_content_description {
+  width: 100%;
+  font-size: 15pt;
+  line-height: 30px;
+}
+.main_content_line {
+  width: 80%;
+  height: 100px;
+  text-align: left;
+  margin-top: 80px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+.main_content_collection_title {
+  font-size: 1.4rem;
+}
+.main_content_line hr {
+  height: 3px;
+  border: 0;
+  background: #144835;
+}
+
+.main_content_collection_all {
+  width: 80%;
+  height: auto;
+  position: relative;
+  clear: both;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.main_content_collection_all > ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  gap: 24px;
+}
+
+.main_content_collection_all img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.btn_area {
+  width: 100%;
+  height: 50px;
+  position: relative;
+  clear: both;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 140px 0;
+}
+
+.lookbook {
+  width: 180px;
+  height: 50px;
+  text-align: center;
+  background: #0d0d0d;
+  line-height: 50px;
+  color: #fff;
+  border-radius: 30px;
+  font-size: 11pt;
+  font-weight: bold;
+}

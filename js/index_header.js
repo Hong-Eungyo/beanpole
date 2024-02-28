@@ -1,7 +1,6 @@
 $(function () {
     var hdOffset = $(".header-wrap").offset();
    $(window).scroll(function() {
-    var textColor = $(".main-menu > ul > li > a");
     if ( $( document ).scrollTop() > hdOffset.top ) {
         $('.header-wrap').addClass('header_fixed');
         $("#logo_black").removeClass('logohide');
