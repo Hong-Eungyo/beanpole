@@ -2,7 +2,7 @@
 
 html, body {
     width: 100%; 
-    height: 100%;
+    /* height: 100%; */
     color: #0d0d0d;
     font-size: 10pt;
     position: relative;
@@ -45,18 +45,3 @@ ul, li {
     background: #f1f1f1
 }
 
-#top-btn {
-    width: 100px;
-    height: 100px;
-    line-height: 100px;
-    text-align: center;
-    position: fixed;
-    right: 50px;
-    bottom:50px;
-    z-index: 5;
-    background: #fff;
-    border-radius: 100%;
-    font-size: 18pt;
-    font-weight: bold;
-    color: #144835;
-}

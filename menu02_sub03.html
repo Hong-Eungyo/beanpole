@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BEABPOLE CLONE CODING</title>
+    <title>BEANBPOLE CLONE CODING</title>
 
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="css/index_header.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/menu02_sub01.css" />
+    <link rel="stylesheet" href="css/top_btn.css">
 
     <!-- jquery -->
     <script src="js/jquery-3.7.1.js"></script>
@@ -32,9 +33,8 @@
     <script src="js/jquery-mousewheel-3.1.13/jquery.mousewheel.min.js"></script>
 
     <!-- script -->
-    <!-- <script src="js/index_scroll_event.js"></script> -->
-    <script src="js/index_header.js"></script>
-    <!-- <script src="js/index_slide.js"></script> -->
+    <script src="js/menu_header.js"></script>
+    <script src="js/top_btn.js"></script>
   </head>
   <body>
     <header class="header-wrap header_fixed">
@@ -166,7 +166,35 @@
         </div>
       </article>
     </section>
-    <div id="top-btn">TOP</div>
+    <div class="top_btn">
+      <span class="btn_text">TOP</span>
+      <i>
+          <span class="arrow_01"></span>
+          <span class="arrow_02"></span>
+          <span class="arrow_03"></span>
+      </i>
+      <svg
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      x="0px"
+      y="0px"
+      width="120px"
+      height="120px"
+      viewBox="0 0 130 130"
+      enable-background="new 0 0 130 130"
+      xml:space="preserve"
+      class="moving-outline">
+      <g>
+      <path
+        fill="#FFFFFF55"
+            stroke="#144835"
+            class="moving-circle"
+            d="M83,99.916c-24.806,0-44.916-20.109-44.916-44.916
+        c0-24.806,20.109-44.917,44.916-44.917c24.807,0,44.916,20.11,44.916,44.917C127.916,79.807,107.807,99.916,83,99.916z"/>
+      </g>
+      </svg>
+    </div>
     <footer>
       <div class="footer_top">
           <h4 class="footer_quick_menu_title">STORE</h4>

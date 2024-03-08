@@ -62,3 +62,8 @@
   font-size: 11pt;
   font-weight: bold;
 }
+
+
+.main_content_center_all .more-content {
+  display: none;
+}

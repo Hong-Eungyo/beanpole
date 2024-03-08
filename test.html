@@ -7,9 +7,9 @@
     <style>
     .moving-circle {
         position: relative;
-      stroke-dasharray: 1360;
-      stroke-dashoffset: 1360;
-      stroke-width: 3px;
+        stroke-dasharray: 1360;
+        stroke-dashoffset: 1360;
+        stroke-width: 3px;
       
     }
 
@@ -24,12 +24,11 @@
         width: 100%;
         height: 1800px;
     }
-    .top_btm {
-        width: 100px;
-        height: 100px;
+    .top_btn {
         position: fixed;
         right: 55px;
         bottom: 20px;
+        cursor: pointer;
     }
     .top_btn .btn_text {
         width: 100px;
@@ -37,8 +36,8 @@
         text-align: center;
         line-height: 100px;
         position: fixed;
-        right: 55px;
-        bottom: 20px;
+        right: 35px;
+        bottom: 10px;
         z-index: 5;
         font-size: 18pt;
         transform: translateY(0);
@@ -54,8 +53,8 @@
     i {
         display: block;
         position: fixed;
-        right: 90px;
-        bottom: 100px;
+        right: 75px;
+        bottom: 88px;
         width: 23px;
         z-index: 6;
         transform: translateY(0px);
@@ -71,9 +70,9 @@
     .arrow_01 {
         display: block;
         position: relative;
-        left: -1px;
-        top: 0;
-        width: 13px;
+        left: 0px;
+        top: 17px;
+        width: 15px;
         height: 2px;
         background: #144835;
         transform: rotate(0deg);
@@ -82,40 +81,44 @@
     }
 
     .top_btn:hover .arrow_01 {
-        transform: rotate(-30deg);
+        transform: rotate(-50deg);
     }
     .arrow_02 {
         display: block;
         position: relative;
-        left: 8px;
-        top: -2px;
-        width: 13px;
+        left: 9px;
+        top: 15px;
+        width: 15px;
         height: 2px;
         background: #144835;
         transition: all 0.3s;
         transition-delay: 0.5s;
         transform: rotate(0deg);
+       
     }
 
     .top_btn:hover .arrow_02 {
-        transform: rotate(30deg);
+        transform: rotate(50deg);
     }
 
     .arrow_03 {
         display: block;
         position: relative;
-        left: 2px;
-        top: 2px;
-        width: 15px;
-        height: 0px;
+        left: 11px;
+        top: 9px;
+        width: 2px;
+        height: 17px;
         background: #144835;
         transition: all 0.5s;
-        transition-delay: 0.8s;
-        transform: rotate(90deg);
+        transition-delay: 0.5s;
+        transform: translateY(-10px);
+        opacity: 0;
     }
 
     .top_btn:hover .arrow_03 {
-        height: 2px;
+        transition-delay: 1s;
+        transform: translateY(0px);
+        opacity: 1;
     }
 
 
@@ -124,18 +127,24 @@
     <script src="./js/jquery-3.7.1.min.js"></script>
     <script>
         $(document).ready(function() {
-	var $dashOffset = $(".moving-circle").css("stroke-dashoffset");
-	$(window).scroll(function() {
-		//calculate how far down the page the user is 
-		var $percentageComplete = (($(window).scrollTop() / ($("html").height() - $(window).height())) * 30);
-		//convert dashoffset pixel value to interger
-		var $newUnit = parseInt($dashOffset, 10);
-		//get the value to be subtracted from the 'stroke-dashoffset'
-		var $offsetUnit = $percentageComplete * ($newUnit / 100);
-		//set the new value of the dashoffset to create the drawing effect
-		$(".moving-circle").css("stroke-dashoffset", $newUnit - $offsetUnit);
-	});
-});
+        var $dashOffset = $(".moving-circle").css("stroke-dashoffset");
+        $(window).scroll(function() {
+            //calculate how far down the page the user is 
+            var $percentageComplete = (($(window).scrollTop() / ($("html").height() - $(window).height())) * 30);
+            //convert dashoffset pixel value to interger
+            var $newUnit = parseInt($dashOffset, 10);
+            //get the value to be subtracted from the 'stroke-dashoffset'
+            var $offsetUnit = $percentageComplete * ($newUnit / 100);
+            //set the new value of the dashoffset to create the drawing effect
+            $(".moving-circle").css("stroke-dashoffset", $newUnit - $offsetUnit);
+        });
+        $(".top_btn").on("click", function() {
+            $("html, body").animate({
+            scrollTop: 0
+        }, 500)
+        })
+
+    });
     </script>
 </head>
 <body>
@@ -152,8 +161,8 @@
      xmlns:xlink="http://www.w3.org/1999/xlink"
      x="0px"
      y="0px"
-     width="150px"
-     height="150px"
+     width="120px"
+     height="120px"
      viewBox="0 0 130 130"
      enable-background="new 0 0 130 130"
      xml:space="preserve"

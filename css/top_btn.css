@@ -1,0 +1,122 @@
+.moving-circle {
+    position: relative;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    stroke-width: 3px;
+}
+
+.moving-outline {
+    position: relative;
+    right: -45px;
+    bottom: -15px;
+    transform: rotate(180deg);
+}
+
+.top_btn {
+    position: fixed;
+    right: 55px;
+    bottom: 20px;
+    cursor: pointer;
+}
+.top_btn.btn_fixed {
+    position: relative;
+    right: 50px;
+    bottom: 50px;
+}
+.top_btn.btn_fixed svg {
+    position: absolute;
+    bottom: -7px;
+
+}
+.top_btn .btn_text {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    position: absolute;
+    right: -18px;
+    bottom: -10px;
+    z-index: 5;
+    font-size: 18pt;
+    transform: translateY(0);
+    transition: all 0.3s;
+}
+
+
+
+.top_btn:hover .btn_text {
+    font-size: 15pt;
+    transform: translateY(10px);
+    transition: all 0.3s;
+}
+
+i {
+    display: block;
+    position: absolute;
+    right: 20px;
+    bottom: 68px;
+    width: 23px;
+    z-index: 6;
+    transform: translateY(0px);
+    transition: all 0.8s;
+    opacity: 0;
+}
+
+.top_btn:hover i {
+    transform: translateY(15px);
+    opacity: 1;
+}
+
+.arrow_01 {
+    display: block;
+    position: relative;
+    left: 0px;
+    top: 17px;
+    width: 15px;
+    height: 2px;
+    background: #144835;
+    transform: rotate(0deg);
+    transition: all 0.3s;
+    transition-delay: 0.5s;
+}
+
+.top_btn:hover .arrow_01 {
+    transform: rotate(-50deg);
+}
+.arrow_02 {
+    display: block;
+    position: relative;
+    left: 9px;
+    top: 15px;
+    width: 15px;
+    height: 2px;
+    background: #144835;
+    transition: all 0.3s;
+    transition-delay: 0.5s;
+    transform: rotate(0deg);
+   
+}
+
+.top_btn:hover .arrow_02 {
+    transform: rotate(50deg);
+}
+
+.arrow_03 {
+    display: block;
+    position: relative;
+    left: 11px;
+    top: 9px;
+    width: 2px;
+    height: 17px;
+    background: #144835;
+    transition: all 0.5s;
+    transition-delay: 0.5s;
+    transform: translateY(-10px);
+    opacity: 0;
+}
+
+.top_btn:hover .arrow_03 {
+    transition-delay: 1s;
+    transform: translateY(0px);
+    opacity: 1;
+}
