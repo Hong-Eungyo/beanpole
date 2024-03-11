@@ -20,19 +20,21 @@
     background-size: cover;
 }
 
+
 /* heritage-content */
 .content-wrap {
     position: relative;
+
 }
 .content-box {
     width: 600px;
     height: 400px;
     position: absolute;
     left: 20%;
-    top: 50%;
-    transform: translateY(-40%);
+    top: 40%;
     color: #f1f1f1;
     text-align: left;
+   
 
 }
 .content_title {
@@ -103,8 +105,7 @@
     height: 400px;
     position: absolute;
     left: 56%;
-    top: 50%;
-    transform: translateY(-40%);
+    top: 40%;
     color: #f1f1f1;
     text-align: left;
 

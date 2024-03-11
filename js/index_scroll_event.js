@@ -28,7 +28,3 @@ $(window).on("wheel", function(e) {
     $html.animate({scrollTop : posTop}, 1000);
 
 })
-
-$(window).resize(function() {
-    
-})

@@ -15,7 +15,9 @@
     <link rel="stylesheet" href="css/public.css">
     <link rel="stylesheet" href="css/index_header.css">
     <link rel="stylesheet" href="css/index_main.css">
+    <link rel="stylesheet" href="css/index_slide.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/top_btn.css">
 
     <!-- jquery -->
     <script src="js/jquery-3.7.1.js"></script>
@@ -27,8 +29,10 @@
 
     <!-- script -->
     <!-- <script src="js/index_scroll_event.js"></script> -->
-    <script src="js/index_header.js"></script>
-    <!-- <script src="js/index_slide.js"></script> -->
+    <script src="js/index_header.js" defer></script>
+    <script src="js/index_slide.js" defer></script>
+    <script src="js/scroll_items.js" defer></script>
+    <script src="js/index_top_btn.js" defer></script>
 </head>
 <body>
     
@@ -86,10 +90,19 @@
             <div class="content-wrap slide-banner">
                     <div class="slide_all_wrap">
                         <div class="slide_box slide_01">
-                            <div class="text-area"></div>
                         </div>
-                        <div class="slide_box slide_02"></div>
-                        <div class="slide_box slide_03"></div>
+                        <div class="slide_box slide_02">
+                            <div class="text-area scroll_item" data-observer>
+                                <h3>RE-EDTION BEANBPOLE</h3>
+                                <p>첫 번째 빈폴 아카이빙 센터</p>
+                            </div>
+                        </div>
+                        <div class="slide_box slide_03">
+                            <div class="text-area scroll_item" data-observer>
+                                <h3>GENTLE BREEZE</h3>
+                                <p>새로운 계절의 출발, 빈폴 레이디스 새로운 룩 바로보기</p>
+                            </div>
+                        </div>
                         <div class="slide_box slide_04"></div>
                     </div>
                     <nav class="dot_all">
@@ -113,7 +126,7 @@
     
             </div>
             <div class="content-wrap heritage-content">
-                <div class="content-box">
+                <div class="content-box scroll_item" data-observer>
                     <h2 class="content_title">HERITAGE</h2>
                     <h3 class="content_sub_title">
                         빈폴이 가진 오랜 역사, <br>
@@ -131,7 +144,7 @@
                 
             </div>
             <div class="content-wrap brand-content">
-                <div class="content-box">
+                <div class="content-box scroll_item" data-observer>
                     <h2 class="content_title">BRAND</h2>
                     <h3 class="content_sub_title">
                         시대를 아우르는 클래식, <br>
@@ -152,7 +165,7 @@
                 </div>
             </div>
             <div class="content-wrap journal-content">
-                <div class="content-box">
+                <div class="content-box scroll_item" data-observer>
                     <h2 class="content_title">JOURNAL</h2>
                     <h3 class="content_sub_title">
                         우리가 빈폴을 입는 이유
@@ -171,7 +184,7 @@
                 </div>
             </div>
             <div class="content-wrap activity-content">
-                <div class="content-box">
+                <div class="content-box scroll_item" data-observer>
                     <h2 class="content_title">GOOD ACTIVITY</h2>
                     <h3 class="content_sub_title">
                         좋은 옷을 더 오래 입는 방법
@@ -218,7 +231,14 @@
                         BEANPOLE CLONE CODING Portfolio Made By Jeon You Ra
                     </p>
                 </div>
-                <div class="footer_top_btn">TOP</div>
+                <div class="footer_top_btn">
+                    <span class="footer_top_text">TOP</span>
+                    <i>
+                        <span class="arrow_01"></span>
+                        <span class="arrow_02"></span>
+                        <span class="arrow_03"></span>
+                    </i>
+                </div>
             </div>
         </footer>
     </div>

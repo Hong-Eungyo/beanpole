@@ -17,7 +17,6 @@ $(document).ready(function() {
     $(window).scroll(function() {
         const footerTop = $("footer").offset().top;
         const heights = footerTop - window.innerHeight;
-        console.log (heights);
         if (window.scrollY > heights) {
             $(".top_btn").addClass("btn_fixed");
         } else {
